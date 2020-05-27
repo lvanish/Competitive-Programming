@@ -1,0 +1,18 @@
+-------fast exponentiation--------
+
+ll fastpow(ll a,ll b){
+	a%=mod;       
+	ll result=1;
+	while(b>0){
+		if(b%2){
+			result*=a;
+			result%=mod;
+		}
+		a*=a;
+		a%=mod;
+		b/=2;
+	}
+	return res;
+}
+
+------------------------------------
