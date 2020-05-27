@@ -1,18 +1,20 @@
 -------fast exponentiation--------
 
-ll fastpow(ll a,ll b){
-	a%=mod;       
+ll fastpower(ll a,ll b){  
+	a%=MOD;       
 	ll result=1;
 	while(b>0){
 		if(b%2){
 			result*=a;
-			result%=mod;
+			result%=MOD;
 		}
 		a*=a;
-		a%=mod;
+		a%=MOD;
 		b/=2;
 	}
-	return res;
+	return result;
 }
 
 ------------------------------------
+
+ll -> long long
